@@ -1,0 +1,53 @@
+body{ 
+    width: auto;
+    height: auto;
+    font-family: Helvetica, Arial, sans-serif;           
+}
+
+header{
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+          
+h4 {
+    text-align: center;
+    font-weight: bold;
+}
+
+h5 {
+    text-align: left;
+}
+
+.columnTitle{
+margin-top: 5%;
+background-color: #f7f8f9;
+padding: 3% 0 2% 3%;
+}
+
+form{
+        border: 1px solid #dee0e2;
+        padding: 3%;
+}
+table{
+        border: 1px solid #dee0e2;   
+}
+
+label[for]{
+    font-weight: bold;
+    white-space:nowrap;
+}
+button{
+    margin-bottom: 10%;
+}
+p{
+    margin: 2% 0 3% 3%;
+}
+.btnGroup input[type="radio"] {
+    opacity:0.01;
+    z-index:100;
+}
+thead{
+    font-weight: bold;
+}
+
+

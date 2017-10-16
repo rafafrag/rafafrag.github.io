@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+    <meta charset="utf-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Rafael-Fraga">    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> 
+    <title>Queue App</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>  
+<body>
+    <header>
+        <h4>Queue App</h4>
+    </header>
+ 
+    <div class="container">
+        <div class="row">
+        <div class="col-md-6">
+        <div class="columnTitle">
+            <h5>New Customer</h5>
+        </div>
+
+    <form name="contact-form" action="page.php" method="post">
+        <fieldset class="form-group row">     
+            <label for="service" class="col-sm-2">Services</label>             
+            <div class="col-sm-10">
+                <input name="service" type="radio" value="Housing" checked />Housing<br>
+                <input name="service" type="radio" value="Benefits" /> Benefits<br>     
+                <input name="service" type="radio" value="Council Tax" /> Council Tax<br>
+                <input name="service" type="radio" value="Fly-tipping" /> Fly-tipping<br> 
+                <input name="service" type="radio" value="Missed Bin" /> Missed Bin<br>  
+            </div>
+        </fieldset>
+        
+        <!--BUTTONS-->
+        <fieldset> 
+            <div class="btn-group btnGroup">
+              <label class="btn btn-primary">
+                <input id="toggle1" name="types" type="radio" value="Citizen" />Citizen</label>
+              <label class="btn btn-primary">
+                <input id="toggle2" name="types" type="radio" value="Organisation" checked />Organisation</label>
+              <label class="btn btn-primary">
+                <input id="toggle3" name="types" type="radio" value="Anonymous" />Anonymous</label>
+            </div>
+        </fieldset> 
+
+      <!--PERSONALES DATAILS-->     
+        <div id="allDetails">
+            <fieldset class="form-group row" id="organisation"> 
+              <label for="organisationName" class="col-sm-2">Organisation</label>
+              <div class="col-sm-12">
+                <input id="organisationName" type="text" class="form-control" placeholder="Organisation Name" />
+            </div>
+            </fieldset>       
+
+            <fieldset class="form-group row">     
+                <label for="title" class="col-sm-2">Title</label>  
+                <div class="col-sm-12">
+                <select name="title" id="title" class="form-control">
+                    <option value="Mr.">Mr.</option>
+                    <option value="Mrs.">Mrs.</option>
+                    <option value="Miss">Miss</option>
+                    <option value="Ms.">Ms.</option>
+                    <option value="Dr.">Dr.</option>
+                    <option value="Other">Other</option>
+                </select>
+                </div>         
+            </fieldset>
+
+            <fieldset class="form-group row"> 
+              <label for="name" class="col-sm-2">First name</label>
+              <div class="col-sm-12">
+                <input id="name" type="text" class="form-control" placeholder="First Name" />
+                </div>
+            </fieldset>
+
+            <fieldset class="form-group row"> 
+                <label for="surname" class="col-sm-2">Last Name</label>
+                <div class="col-sm-12">
+                <input type="text" id="surname" class="form-control" placeholder="Last Name" />
+                </div>
+            </fieldset>
+        </div>
+
+            <fieldset class="form-group">
+                <input type="button" id="submitBtn" value="Submit" class="btn btn-primary" />
+            </fieldset>
+        </form></div><!--closes LEFT column-->
+
+        <!--TABLE-->      
+        <div class="col-md-6">
+            <div class="columnTitle">
+                <h5>Queue</h5>
+        </div>
+        <p>List of the customers being queued</p>
+        <table id="list" class="table table-responsive">
+        <thead>
+            <tr>
+              <td>#</td>
+              <td>Type</td>
+              <td>Name</td>
+            <td>Service</td>
+            <td>Queued at</td>
+            </tr>
+        </tread>
+        <tbody>
+            <tr>
+              <td scope="row">1</td>
+              <td>Citizen</td>
+              <td>Mr. Jon Snow</td>
+              <td>Missed Bin</td>
+                <td>9:43</td>
+            </tr>
+            <tr>
+              <td scope="row">2</td>
+              <td>Citizen</td>
+              <td>Mrs. Lois Griffin</td>
+              <td>Housing</td>
+                <td>10:10</td>
+            </tr>
+            <tr>
+              <td scope="row">3</td>
+              <td>Organisation</td>
+              <td>Brian</td>
+              <td>Fly-tipping</td>
+                <td>10:12</td>
+            </tr>
+            <tr>
+              <td scope="row">4</td>
+              <td>Anonymous</td>
+              <td>Anonymous</td>
+              <td>Fly-tipping</td>
+                <td>11:14</td>
+            </tr>
+          </tbody>
+        </table>
+        </div><!--closes LEFT column-->
+    </div><!--closes the ROW-->
+    </div><!--closes main container-->
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>  
+    
+</body>  
+    
+</html>
