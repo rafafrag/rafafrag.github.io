@@ -44,8 +44,14 @@ p{
 }
 .btnGroup input[type="radio"] {
     opacity:0.01;
-    z-index:100;
+    z-index:100; 
+
 }
+.btnGroup label{
+    padding: 1% 0.5% 1% 0.5%;
+    margin-left: 10%;
+}
+
 thead{
     font-weight: bold;
 }
